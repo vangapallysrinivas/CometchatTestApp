@@ -1,10 +1,12 @@
-# Xcode
+# Build & Derived files
 build/
 DerivedData/
+
+# Workspace & user data
 *.xcworkspace
-*.xcodeproj/project.xcworkspace/
 *.xcuserstate
 *.xcuserdata/
+*.xcodeproj/project.xcworkspace/
 
 # Swift Package Manager
 .swiftpm/
@@ -22,16 +24,24 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 
-# Archives
+# Archives & Artifacts
 *.xcarchive
-
-# User-specific
-*.DS_Store
-*.idea/
-*.vscode/
-
-# Bundle files
 *.ipa
 *.app
 *.dSYM.zip
 *.dSYM
+
+# Editor stuff
+*.DS_Store
+.idea/
+.vscode/
+
+# Allow source files and project files
+!*.xcodeproj
+!*.swift
+!*.h
+!*.m
+!*.plist
+!*.xib
+!*.storyboard
+!Assets.xcassets/
